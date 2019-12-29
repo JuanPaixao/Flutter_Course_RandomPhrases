@@ -23,7 +23,7 @@ class _State extends State<HomeStateful> {
     "O verdadeiro heroísmo consiste em persistir por mais um momento, quando tudo parece perdido"
   ];
   int lastValue = 0;
-  void PhraseGenerator() {
+  void phraseGenerator() {
     int phraseCount = Random().nextInt(list.length);
     if (lastValue != phraseCount) {
       lastValue = phraseCount;
@@ -67,7 +67,7 @@ class _State extends State<HomeStateful> {
                   ),
                   onPressed: () {
                     setState(() {
-                      PhraseGenerator();
+                      phraseGenerator();
                     });
                   },
                   color: Colors.green,
