@@ -3,9 +3,6 @@ import 'package:flutter/material.dart';
 
 void main(List<String> args) {
   runApp(MaterialApp(debugShowCheckedModeBanner: false, home: HomeStateful()));
-
-  var lista = [11, 22, 33, "Oi"];
-  print(lista.length);
 }
 
 class HomeStateful extends StatefulWidget {
